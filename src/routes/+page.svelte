@@ -1,3 +1,7 @@
+<script lang="ts">
+    // import { math } from 'mathlifier';
+</script>
+
 <main>
     <div class="hero">
         <h1>Real Problems, Real Math</h1>
@@ -35,6 +39,12 @@
             </p>
         </div>
     </div>
+
+    <div class="example">
+        <h2>Example Problems</h2>
+
+        <h3>From </h3>
+    </div>
 </main>
 
 <style lang="scss">
@@ -49,7 +59,16 @@
         }
     }
 
-    // make every 2nd section have a different background color
+    div.example {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    // .math {
+    //     font-family:'Times New Roman', Times, serif;
+    //     font-size: 1.4rem;
+    // }
+
     div.what {
         padding: 1rem;
         display: flex;
