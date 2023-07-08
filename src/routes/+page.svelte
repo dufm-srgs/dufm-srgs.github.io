@@ -29,6 +29,16 @@
 </main>
 
 <style>
+    div.hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
     main {
         padding: 1rem;
     }
