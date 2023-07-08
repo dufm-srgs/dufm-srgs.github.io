@@ -12,7 +12,7 @@
     <h2>What we do</h2>
 
 
-    <div class="what">
+    <div id="what">
         <div class="section">
             <h3>Analyze Problems</h3>
             <p>
@@ -69,7 +69,7 @@
     //     font-size: 1.4rem;
     // }
 
-    div.what {
+    div#what {
         padding: 1rem;
         display: flex;
         flex-direction: row;
