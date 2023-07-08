@@ -16,28 +16,33 @@
 
     h1 {
         font-size: 3rem;
-    }
+        margin: 0;
 
-    @media (max-width: 600px) {
-        div {
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: center;
+        a {
+            font-size: 3rem;
         }
     }
-    
+
     a {
         font-size: 2rem;
         margin-left: 1rem;
         color: black;
     }
 
-    h1 {
-        margin: 0;
+    @media (max-width: 600px) {
+        div {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
 
         a {
-            font-size: 3rem;
+            margin-left: 0;
         }
     }
 </style>

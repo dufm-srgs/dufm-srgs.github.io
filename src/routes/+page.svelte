@@ -11,7 +11,6 @@
 
     <h2>What we do</h2>
 
-
     <div id="what">
         <div class="section">
             <h3>Analyze Problems</h3>
@@ -99,8 +98,18 @@
         font-size: 5rem;
     }
 
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+
     @media (max-width: 600px) {
         h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
             font-size: 3rem;
         }
 
@@ -109,11 +118,5 @@
             width: calc(100% - 4rem);
             padding-top: 10rem;
         }
-    }
-
-    h2 {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 4rem;
     }
 </style>
