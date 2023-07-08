@@ -99,6 +99,18 @@
         font-size: 5rem;
     }
 
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        div.hero {
+            padding: 2rem;
+            width: calc(100% - 4rem);
+            padding-top: 10rem;
+        }
+    }
+
     h2 {
         margin-top: 2rem;
         text-align: center;

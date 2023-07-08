@@ -17,6 +17,15 @@
     h1 {
         font-size: 3rem;
     }
+
+    @media (max-width: 600px) {
+        div {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+        }
+    }
     
     a {
         font-size: 2rem;
