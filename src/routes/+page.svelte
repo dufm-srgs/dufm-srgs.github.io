@@ -1,7 +1,3 @@
-<script lang="ts">
-    // import { math } from 'mathlifier';
-</script>
-
 <main>
     <div class="hero">
         <h1>Real Problems, Real Math</h1>
@@ -15,8 +11,8 @@
         <div class="section">
             <h3>Analyze Problems</h3>
             <p>
-                We explore various topics in mathematics, challenging ourselves to think critically and creatively about the world around us.
-                Whether working alone or in groups, this course prepares you to tackle a wide variety of problems with confidence.
+                Explore various topics in mathematics in order to think critically and creatively about the world.
+                Whether working alone or in groups, be ready to tackle a wide variety of problems with confidence.
             </p>
         </div>
 
@@ -24,8 +20,8 @@
             <h3>Explore and Create</h3>
 
             <p>
-                Explore problems via graphs, simulations, and other visualizations. Look for patterns and connections in your data
-                and use them to conjecture and prove new results.
+                Find patterns and make conjectures. Utilize college-level 
+                fields of mathematics to analyze new problems.
             </p>
         </div>
 
@@ -33,16 +29,10 @@
             <h3>Prove and Justify</h3>
 
             <p>
-                Back up your conjectures with rigorous proofs. Learn to write proofs that are clear, concise, and convincing.
-                Learn about the different types of proofs and various principles of logic to help build reason.
+                Back up your conjectures with rigorous proofs. Learn to write proofs that are concise and correct.
+                Use logic to justify your claims.
             </p>
         </div>
-    </div>
-
-    <div class="example">
-        <h2>Example Problems</h2>
-
-        <h3>From </h3>
     </div>
 </main>
 
@@ -51,22 +41,13 @@
         width: calc(100% - 10rem);
         text-align: center;
         padding: 5rem;
+        padding-top: 7rem;
         background-color: skyblue;
 
         p {
             font-size: 2rem;
         }
     }
-
-    div.example {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    // .math {
-    //     font-family:'Times New Roman', Times, serif;
-    //     font-size: 1.4rem;
-    // }
 
     div#what {
         padding: 1rem;
@@ -89,7 +70,7 @@
 
         h3 {
             margin-top: 2rem;
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: center;
         }
     }
@@ -101,7 +82,7 @@
     h2 {
         margin-top: 2rem;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     @media (max-width: 600px) {
