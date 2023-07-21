@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Canvas, Layer, t, type Render } from 'svelte-canvas';
-    import * as Voronoi from "voronoi"
+    import Voronoi from "voronoi"
     import randomColor from 'randomcolor';
 
     let width = 640;
@@ -25,7 +25,7 @@
 
     let render: Render;
 	$: render = ({ context, width, height }) => {
-        const voronoi = new Voronoi();
+        const voronoi = Voronoi ? new Voronoi() : new globalThis.Voronoi();
 
         const boundingBox = {
             xl: 0,
