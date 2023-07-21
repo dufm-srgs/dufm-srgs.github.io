@@ -1,16 +1,10 @@
 <script lang="ts">
 	import Voronoi from "$lib/Voronoi.svelte";
-	import { tweened } from "svelte/motion";
-	import { cubicOut } from 'svelte/easing';
-
-	let cursorX = tweened(0, { duration: 100, easing: cubicOut });
-	let cursorY = tweened(0, { duration: 100, easing: cubicOut });
 </script>
 
 <main>
-	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div class="canvas-parent" on:mousemove="{e => { $cursorX = e.clientX; $cursorY = e.clientY; }}">
-		<Voronoi cursorX={$cursorX} cursorY={$cursorY} />
+	<div class="canvas-parent">
+		<Voronoi />
 		<div class="hero">
 			<h1>Real Problems, Real Math</h1>
 
@@ -38,7 +32,7 @@
 
 			<p>
 				Find patterns and make conjectures. Utilize college-level fields of mathematics to analyze
-				new problems.
+				new problems and create new solutions.
 			</p>
 		</div>
 
@@ -63,7 +57,7 @@
 		text-align: center;
 		padding: 5rem;
 		padding-top: 7rem;
-		background: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, 0.7);
 
 		p {
 			font-size: 2rem;

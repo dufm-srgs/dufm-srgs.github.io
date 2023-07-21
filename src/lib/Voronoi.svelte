@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { Canvas, Layer, t, type Render } from 'svelte-canvas';
     import * as Voronoi from "voronoi"
     import randomColor from 'randomcolor';
@@ -9,8 +8,6 @@
 
     const colors = Array(20).fill(0).map(() => randomColor());
     const cursorColor = "#FCF5C7";
-    export let cursorX = 0;
-    export let cursorY = 0;
 
     const generatedSites = colors.map(color => {
         return {
@@ -20,9 +17,7 @@
         }
     })
 
-    $: untransformedSites = [...generatedSites, { x: cursorX / width, y: cursorY / height, color: cursorColor }]
-
-    $: sites = untransformedSites.map(site => ({
+    $: sites = generatedSites.map(site => ({
         ...site,
         x: site.x * width,
         y: site.y * height,
