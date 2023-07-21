@@ -1,11 +1,18 @@
-<main>
-	<div class="hero">
-		<h1>Real Problems, Real Math</h1>
+<script lang="ts">
+	import Voronoi from "$lib/Voronoi.svelte";
+</script>
 
-		<p>
-			Explore mathematics beyound the boundaries of high school in the Dirt Under the Fingernails
-			Mathematics course @ Virginia Summer Residential Governers School.
-		</p>
+<main>
+	<div class="canvas-parent">
+		<Voronoi />
+		<div class="hero">
+			<h1>Real Problems, Real Math</h1>
+
+			<p>
+				Explore mathematics beyound the boundaries of high school in the Dirt Under the Fingernails
+				Mathematics course @ Virginia Summer Residential Governers School.
+			</p>
+		</div>
 	</div>
 
 	<h2>What we do</h2>
@@ -41,12 +48,16 @@
 </main>
 
 <style lang="scss">
+	.canvas-parent {
+		position: relative;
+	}
+
 	div.hero {
 		width: calc(100% - 10rem);
 		text-align: center;
 		padding: 5rem;
 		padding-top: 7rem;
-		background-color: skyblue;
+		background: rgba(255, 255, 255, 0.6);
 
 		p {
 			font-size: 2rem;
@@ -68,8 +79,16 @@
 			border-radius: 1rem;
 			text-align: center;
 
-			&:nth-child(2n) {
-				background: lightblue;
+			&:nth-child(1) {
+				background: #FFC09F;
+			}
+
+			&:nth-child(2) {
+				background: #FFEE93;
+			}
+
+			&:nth-child(3) {
+				background: #ADF7B6;
 			}
 		}
 

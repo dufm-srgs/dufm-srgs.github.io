@@ -8,10 +8,11 @@
 		width: calc(100% - 2rem);
 		padding: 1rem;
 		position: fixed;
-		background: lightgray;
+		background: #79ADDC;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		z-index: 1;
 	}
 
 	h1 {
