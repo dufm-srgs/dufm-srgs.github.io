@@ -3,8 +3,8 @@
 		<h1>Real Problems, Real Math</h1>
 
 		<p>
-			Explore mathematics beyound the boundaries of high school in the Dirt Under the Fingernails
-			Mathematics course @ Virginia Summer Residential Governers School.
+			Explore mathematics beyond the boundaries of high school in the Dirt Under the Fingernails
+			Mathematics course at the Virginia Summer Residential Governers School.
 		</p>
 	</div>
 
