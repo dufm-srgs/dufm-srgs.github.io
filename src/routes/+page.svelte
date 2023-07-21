@@ -1,10 +1,16 @@
 <script lang="ts">
 	import Voronoi from "$lib/Voronoi.svelte";
+	import { tweened } from "svelte/motion";
+	import { cubicOut } from 'svelte/easing';
+
+	let cursorX = tweened(0, { duration: 100, easing: cubicOut });
+	let cursorY = tweened(0, { duration: 100, easing: cubicOut });
 </script>
 
 <main>
-	<div class="canvas-parent">
-		<Voronoi />
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<div class="canvas-parent" on:mousemove="{e => { $cursorX = e.clientX; $cursorY = e.clientY; }}">
+		<Voronoi cursorX={$cursorX} cursorY={$cursorY} />
 		<div class="hero">
 			<h1>Real Problems, Real Math</h1>
 

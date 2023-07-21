@@ -7,12 +7,26 @@
     let width = 640;
     let height = 640;
 
-    $: sites = Array(20).fill(0).map(() => {
+    const colors = Array(20).fill(0).map(() => randomColor());
+    const cursorColor = "#FCF5C7";
+    export let cursorX = 0;
+    export let cursorY = 0;
+
+    const generatedSites = colors.map(color => {
         return {
-            x: Math.random() * width,
-            y: Math.random() * height
+            x: Math.random(),
+            y: Math.random(),
+            color
         }
     })
+
+    $: untransformedSites = [...generatedSites, { x: cursorX / width, y: cursorY / height, color: cursorColor }]
+
+    $: sites = untransformedSites.map(site => ({
+        ...site,
+        x: site.x * width,
+        y: site.y * height,
+    }))
 
     let render: Render;
 	$: render = ({ context, width, height }) => {
@@ -24,10 +38,19 @@
             yt: 0,
             yb: height
         }
-        const diagram = voronoi.compute(sites, boundingBox);
 
-        for (const cell of diagram.cells) {
-            const color = randomColor();
+        const cells = voronoi.compute(sites, boundingBox).cells.sort((a, b) => {
+            if (a.site.color === cursorColor) {
+                return 1;
+            } else if (b.site.color === cursorColor) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+        for (let i = 0; i < sites.length; i++) {
+            const cell = cells[i];
+            const color = sites[i].color;
             context.fillStyle = color;
             context.strokeStyle = color;
             context.beginPath();
