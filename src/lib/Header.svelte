@@ -5,6 +5,7 @@
 <div class:short={scrollY > 0}>
 	<h1><a href="/">DUFM</a></h1>
 	<a href="#what">What we do</a>
+	<a href="#testimonials">Testimonials</a>
 </div>
 
 <svelte:window bind:scrollY={scrollY}></svelte:window>
@@ -48,11 +49,11 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			max-height: 6rem;
+			max-height: 9rem;
 		}
 
 		.short {
-			max-height: 5rem;
+			max-height: 8rem;
 		}
 
 		h1 {

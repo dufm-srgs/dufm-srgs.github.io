@@ -19,5 +19,9 @@ export const testimonials: Testimonial[] = [
     {
         author: "Chase L.",
         quote: "The nerdiest course here at nerd camp",
+    },
+    {
+        author: "Tristan F.",
+        quote: "I've had a great time working on these problem sets! We seldom have the chance to encounter these challenges in a normal mathematics course"
     }
 ]

@@ -16,7 +16,8 @@
 		</div>
 	</div>
 
-	<h2 id="what">What we do</h2>
+	<span class="anchor" id="what"></span>
+	<h2>What we do</h2>
 
 	<div class="what-container">
 		<div class="section">
@@ -47,7 +48,8 @@
 		</div>
 	</div>
 
-	<h2 id="testimonials">Testimonials</h2>
+	<span class="anchor" id="testimonials"></span>
+	<h2>Testimonials</h2>
 
 	<div class="testimonial-container">
 		{#each testimonials as testimonial}
@@ -61,6 +63,13 @@
 </main>
 
 <style lang="scss">
+	.anchor {
+		display: block;
+		position: relative;
+		top: -4rem;
+		visibility: hidden;
+	}
+
 	.canvas-parent {
 		position: relative;
 	}
@@ -81,6 +90,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			font-size: 1.2rem;
 			
 			.quote {
 				font-weight: 600;
