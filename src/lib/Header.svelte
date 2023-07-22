@@ -43,13 +43,22 @@
 		color: black;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 700px) {
 		div {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
 			max-height: 9rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		a {
+			font-size: 1.5rem;
+			margin-left: 0;
 		}
 
 		.short {

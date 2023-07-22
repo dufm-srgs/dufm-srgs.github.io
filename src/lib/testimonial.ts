@@ -22,6 +22,6 @@ export const testimonials: Testimonial[] = [
     },
     {
         author: "Tristan F.",
-        quote: "I've had a great time working on these problem sets! We seldom have the chance to encounter these challenges in a normal mathematics course"
+        quote: "Completing problem sets in this course has been magnitudes more exhilarating than a normal mathematics course."
     }
 ]
