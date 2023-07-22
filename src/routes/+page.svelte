@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Voronoi from "$lib/Voronoi.svelte";
+	import { testimonials } from "$lib/testimonial";
 </script>
 
 <main>
@@ -15,9 +16,9 @@
 		</div>
 	</div>
 
-	<h2>What we do</h2>
+	<h2 id="what">What we do</h2>
 
-	<div id="what">
+	<div class="what-container">
 		<div class="section">
 			<h3>Analyze Problems</h3>
 			<p>
@@ -45,11 +46,55 @@
 			</p>
 		</div>
 	</div>
+
+	<h2 id="testimonials">Testimonials</h2>
+
+	<div class="testimonial-container">
+		{#each testimonials as testimonial}
+			<div class="testimonial">
+				<span class="quote">‘‘</span>
+				<p>{testimonial.quote}</p>
+				<p class="author">- {testimonial.author}</p>
+			</div>
+		{/each}
+	</div>
 </main>
 
 <style lang="scss">
 	.canvas-parent {
 		position: relative;
+	}
+
+	div.testimonial-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+		div.testimonial {
+			width: 30rem;
+			margin: 1rem;
+			padding: 1rem;
+			border: 1px solid black;
+			border-radius: 1rem;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			
+			.quote {
+				font-weight: 600;
+				font-size: 5rem;
+				padding: 0;
+				height: 4rem;
+			}
+
+			.author {
+				font-style: italic;
+				text-align: right;
+				margin-right: 1rem;
+			}
+		}
 	}
 
 	div.hero {
@@ -64,7 +109,7 @@
 		}
 	}
 
-	div#what {
+	div.what-container {
 		padding: 1rem;
 		display: flex;
 		flex-direction: row;
