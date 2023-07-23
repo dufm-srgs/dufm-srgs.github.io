@@ -48,6 +48,8 @@
 		</div>
 	</div>
 
+	<hr />
+
 	<span class="anchor" id="testimonials"></span>
 	<h2>Testimonials</h2>
 
@@ -62,12 +64,22 @@
 	</div>
 </main>
 
+<footer>
+	Made by DUFM students. Source on <a href="https://github.com/dufm-srgs/dufm-srgs.github.io/">GitHub.</a>
+</footer>
+
 <style lang="scss">
 	.anchor {
 		display: block;
 		position: relative;
 		top: -4rem;
 		visibility: hidden;
+	}
+
+	@media (max-width: 700px) {
+		.anchor {
+			top: -10rem;
+		}
 	}
 
 	.canvas-parent {
@@ -104,6 +116,18 @@
 				text-align: right;
 				margin-right: 1rem;
 			}
+		}
+	}
+
+	footer {
+		background-color: #679436;
+		color: white;
+		width: calc(100% - 2rem);
+		text-align: center;
+		padding: 1rem;
+
+		a {
+			color: white;
 		}
 	}
 
