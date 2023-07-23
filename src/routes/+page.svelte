@@ -86,6 +86,7 @@
 
 	.canvas-parent {
 		position: relative;
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 	}
 
 	div.testimonial-container {
@@ -136,8 +137,7 @@
 	div.hero {
 		width: calc(100% - 10rem);
 		text-align: center;
-		padding: 5rem;
-		padding-top: 7rem;
+		padding: 7rem 5rem;
 		background: rgba(255, 255, 255, 0.7);
 
 		p {
