@@ -8,14 +8,14 @@
 	<a href="#testimonials">Testimonials</a>
 </div>
 
-<svelte:window bind:scrollY={scrollY}></svelte:window>
+<svelte:window bind:scrollY />
 
 <style lang="scss">
 	div {
 		width: calc(100% - 2rem);
 		padding: 1rem;
 		position: fixed;
-		background: #79ADDC;
+		background: #79addc;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;

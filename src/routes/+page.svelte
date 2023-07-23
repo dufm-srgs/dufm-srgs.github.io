@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Voronoi from "$lib/Voronoi.svelte";
-	import { testimonials } from "$lib/testimonial";
+	import Voronoi from '$lib/Voronoi.svelte';
+	import { testimonials } from '$lib/testimonial';
 </script>
 
 <main>
@@ -16,7 +16,7 @@
 		</div>
 	</div>
 
-	<span class="anchor" id="what"></span>
+	<span class="anchor" id="what" />
 	<h2>What we do</h2>
 
 	<div class="what-container">
@@ -50,7 +50,7 @@
 
 	<hr />
 
-	<span class="anchor" id="testimonials"></span>
+	<span class="anchor" id="testimonials" />
 	<h2>Testimonials</h2>
 
 	<div class="testimonial-container">
@@ -65,7 +65,9 @@
 </main>
 
 <footer>
-	Made by DUFM students. Source on <a href="https://github.com/dufm-srgs/dufm-srgs.github.io/">GitHub.</a>
+	Made by DUFM students. Source on <a href="https://github.com/dufm-srgs/dufm-srgs.github.io/"
+		>GitHub.</a
+	>
 </footer>
 
 <style lang="scss">
@@ -103,7 +105,7 @@
 			flex-direction: column;
 			justify-content: center;
 			font-size: 1.2rem;
-			
+
 			.quote {
 				font-weight: 600;
 				font-size: 5rem;
@@ -159,15 +161,15 @@
 			text-align: center;
 
 			&:nth-child(1) {
-				background: #FFC09F;
+				background: #ffc09f;
 			}
 
 			&:nth-child(2) {
-				background: #FFEE93;
+				background: #ffee93;
 			}
 
 			&:nth-child(3) {
-				background: #ADF7B6;
+				background: #adf7b6;
 			}
 		}
 
