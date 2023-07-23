@@ -6,7 +6,7 @@
     let width = 640;
     let height = 640;
 
-    const colors = Array(100).fill(0).map(() => randomColor());
+    const colors = Array(200).fill(0).map(() => randomColor());
     const cursorColor = "#FCF5C7";
 
     const generatedSites = colors.map(color => {
@@ -19,7 +19,7 @@
 
     $: sites = generatedSites.map(site => ({
         ...site,
-        x: (site.x * width + ($t / 50)) % width,
+        x: (site.x * width + ($t / 10)) % (width * 3) - width,
         y: site.y * height
     }))
 
@@ -28,27 +28,19 @@
         const voronoi = Voronoi ? new Voronoi() : new globalThis.Voronoi();
 
         const boundingBox = {
-            xl: -width - 50,
-            xr: 2 * width + 50,
-            yt: -height - 50,
-            yb: height * 2 + 50
+            xl: -width * 10,
+            xr: 20 * width,
+            yt: -height * 10,
+            yb: height * 20
         }
 
-        const cells = voronoi.compute(sites, boundingBox).cells.sort((a, b) => {
-            if (a.site.color === cursorColor) {
-                return 1;
-            } else if (b.site.color === cursorColor) {
-                return -1;
-            } else {
-                return 0;
-            }
-        });
+        const { cells } = voronoi.compute(sites, boundingBox)
         for (let i = 0; i < sites.length; i++) {
             const cell = cells[i];
             const color = sites[i].color;
             context.fillStyle = color;
             context.strokeStyle = color;
-        context.beginPath();
+            context.beginPath();
             context.moveTo(cell.halfedges[0].getStartpoint().x, cell.halfedges[0].getStartpoint().y);
             for (const halfedge of cell.halfedges) {
                 context.lineTo(halfedge.getEndpoint().x, halfedge.getEndpoint().y);
