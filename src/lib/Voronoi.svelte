@@ -19,7 +19,7 @@
 
     $: sites = generatedSites.map(site => ({
         ...site,
-        x: (site.x * width + ($t / 10)) % (width * 3) - width,
+        x: (site.x * width + ($t / 50)) % (width * 3) - width,
         y: site.y * height
     }))
 
