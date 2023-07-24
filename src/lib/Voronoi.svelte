@@ -9,12 +9,11 @@
 	const colors = Array(300)
 		.fill(0)
 		.map(() => randomColor());
-	const cursorColor = '#FCF5C7';
 
 	const generatedSites = colors.map((color) => {
 		return {
-            x: Math.random() * 3 - 1,
-            y: Math.random() * 3 - 1,
+			x: Math.random() * 3 - 1,
+			y: Math.random() * 3 - 1,
 			color
 		};
 	});

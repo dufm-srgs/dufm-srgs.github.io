@@ -43,12 +43,10 @@
 
 			<p>
 				Back up your conjectures with rigorous proofs. Learn to write proofs that are concise and
-				correct. Use logic to justify your claims.
+				correct. Use logic to justify your claims.<br />■
 			</p>
 		</div>
 	</div>
-
-	<hr />
 
 	<span class="anchor" id="testimonials" />
 	<h2>Testimonials</h2>
@@ -100,6 +98,7 @@
 			margin: 1rem;
 			padding: 1rem;
 			border: 1px solid black;
+			background-color: #fcf5c7;
 			border-radius: 1rem;
 			text-align: center;
 			display: flex;
