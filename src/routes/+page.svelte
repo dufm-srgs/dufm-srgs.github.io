@@ -191,6 +191,10 @@
 		.anchor {
 			top: -10rem;
 		}
+
+		h2 {
+			font-size: 2rem;
+		}
 	}
 
 	.canvas-parent {
@@ -312,7 +316,7 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2rem;
 		}
 
 		div.hero {

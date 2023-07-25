@@ -5,6 +5,7 @@
 <div class:short={scrollY > 0}>
 	<h1><a href="/">DUFM</a></h1>
 	<a href="#what">What we do</a>
+	<a href="#our-class">About</a>
 	<a href="#testimonials">Testimonials</a>
 </div>
 
@@ -28,6 +29,12 @@
 		max-height: 2.5rem;
 	}
 
+	a {
+		font-size: 2rem;
+		margin-left: 1rem;
+		color: black;
+	}
+
 	h1 {
 		font-size: 3rem;
 		margin: 0;
@@ -37,13 +44,17 @@
 		}
 	}
 
-	a {
-		font-size: 2rem;
-		margin-left: 1rem;
-		color: black;
+	@media (max-width: 800px) {
+		a {
+			font-size: 1.5rem;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 650px) {
 		div {
 			flex-direction: column;
 			align-items: center;
@@ -52,25 +63,22 @@
 			max-height: 9rem;
 		}
 
-		h1 {
-			font-size: 2rem;
+		a {
+			font-size: 1rem;
+			margin-left: 0;
 		}
 
-		a {
-			font-size: 1.5rem;
-			margin-left: 0;
+		h1 {
+			font-size: 1rem;
+			margin-bottom: 0.5rem;
+
+			a {
+				font-size: 1.5rem;
+			}
 		}
 
 		.short {
 			max-height: 8rem;
-		}
-
-		h1 {
-			margin-bottom: 0.5rem;
-		}
-
-		a {
-			margin-left: 0;
 		}
 	}
 </style>
