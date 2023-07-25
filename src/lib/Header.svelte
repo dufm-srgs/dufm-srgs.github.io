@@ -5,7 +5,7 @@
 <div class:short={scrollY > 0}>
 	<h1><a href="/">DUFM</a></h1>
 	<a href="#what">What we do</a>
-	<a href="#our-class">About</a>
+	<a href="#about-us">About Us</a>
 	<a href="#testimonials">Testimonials</a>
 </div>
 

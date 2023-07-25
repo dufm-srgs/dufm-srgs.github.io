@@ -118,9 +118,9 @@
 		</div>
 	</div>
 
-	<span class="anchor" id="our-class" />
+	<span class="anchor" id="about-us" />
 
-	<h2>Our Class</h2>
+	<h2>About Us</h2>
 	<div class="banner">
 		<img src={ClassPhoto} alt="Class posing with a whiteboard behind them" />
 	</div>
