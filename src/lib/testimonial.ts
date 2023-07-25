@@ -23,8 +23,20 @@ export const testimonials: Testimonial[] = [
 		quote: 'Now I am become math, the destroyer of brains.'
 	},
 	{
+		author: 'Lisa',
+		quote: 'My brain been cooked longer than the potatoes at breakfast bc oh lawd is it BURNT'
+	},
+	{
 		author: 'Tristan F.',
 		quote:
 			'Completing problems in this course has been way more fun than a normal mathematics course.'
+	},
+	{
+		author: "Daniel O.",
+		quote: 'In no other class can you learn so much while not knowing any of the material at all'
+	},
+	{
+		author: "Taran S.",
+		quote: 'This class made me love math. I love math',
 	}
 ];
