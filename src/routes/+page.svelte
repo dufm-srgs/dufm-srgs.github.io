@@ -324,5 +324,9 @@
 			width: calc(100% - 4rem);
 			padding-top: 10rem;
 		}
+
+		.banner {
+			width: 90%;
+		}
 	}
 </style>
