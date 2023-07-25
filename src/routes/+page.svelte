@@ -322,7 +322,16 @@
 		div.hero {
 			padding: 2rem;
 			width: calc(100% - 4rem);
-			padding-top: 10rem;
+			padding-top: 8rem;
+			padding-bottom: 6rem;
+
+			h1 {
+				font-size: 2.5rem;
+			}
+
+			p {
+				font-size: 1.25rem;
+			}
 		}
 
 		.banner {
