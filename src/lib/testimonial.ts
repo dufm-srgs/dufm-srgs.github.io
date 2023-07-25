@@ -38,5 +38,9 @@ export const testimonials: Testimonial[] = [
 	{
 		author: "Taran S.",
 		quote: 'This class made me love math. I love math',
+	},
+	{
+		author: "Nico",
+		quote: 'I’ve grown my brain but lost my mind'
 	}
 ];
