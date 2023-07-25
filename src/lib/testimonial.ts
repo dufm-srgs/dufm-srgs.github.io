@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
 	{
 		author: 'Jack C.',
 		quote:
-			'My escapades in this class have made my friends genuinely question my sanity and moral standing'
+			'My episodes in this class have made my friends genuinely question my sanity and moral standing'
 	},
 	{
 		author: 'Aaron K.',
