@@ -1,6 +1,76 @@
 <script lang="ts">
 	import Voronoi from '$lib/Voronoi.svelte';
 	import { testimonials } from '$lib/testimonial';
+	import ClassPhoto from "$lib/images/class_photo.webp";
+
+	import BigTree from "$lib/images/slideshow/big_tree.webp";
+	import BigWork from "$lib/images/slideshow/big_work.webp";
+	import DistraughtPhoto from "$lib/images/slideshow/distraught.webp";
+	import GameGrid from "$lib/images/slideshow/game_grid.webp";
+	import Grid from "$lib/images/slideshow/grid.webp";
+	import HappyPhoto from "$lib/images/slideshow/happy.webp";
+	import InJoke from "$lib/images/slideshow/injoke.webp";
+	import MadnessPhoto from "$lib/images/slideshow/madness.webp";
+	import OutsidePhoto from "$lib/images/slideshow/outside.webp";
+	import PensivePhoto from "$lib/images/slideshow/pensive.webp";
+	import WalkAndChill from "$lib/images/slideshow/walk_and_chill.webp";
+	import GroupDesk from "$lib/images/slideshow/group_desk.webp";
+
+	interface Image {
+		url: string;
+		alt: string;
+	}
+
+	const images: Image[] = [
+		{
+			url: DistraughtPhoto,
+			alt: "A student looking distraught while working on a problem"
+		},
+		{
+			url: HappyPhoto,
+			alt: "A student smiling while working on a problem"
+		},
+		{
+			url: MadnessPhoto,
+			alt: "A student looking mad while working on a problem"
+		},
+		{
+			url: OutsidePhoto,
+			alt: "A student working on a problem outside"
+		},
+		{
+			url: PensivePhoto,
+			alt: "A student looking pensive while working on a problem"
+		},
+		{
+			url: BigTree,
+			alt: "A student standing in front of a big tree"
+		},
+		{
+			url: GroupDesk,
+			alt: "A group of students working on a problem at a desk"
+		},
+		{
+			url: WalkAndChill,
+			alt: "A student walking and chilling"
+		},
+		{
+			url: InJoke,
+			alt: "A student laughing at an inside joke"
+		},
+		{
+			url: BigWork,
+			alt: "A student working on a big problem"
+		},
+		{
+			url: Grid,
+			alt: "A student working on a problem on a grid"
+		},
+		{
+			url: GameGrid,
+			alt: "A student working on a problem on a grid"
+		}
+	];
 </script>
 
 <main>
@@ -48,6 +118,19 @@
 		</div>
 	</div>
 
+	<span class="anchor" id="our-class" />
+
+	<h2>Our Class</h2>
+	<div class="banner">
+		<img src={ClassPhoto} alt="Class posing with a whiteboard behind them" />
+	</div>
+
+	<div class="slideshow">
+		{#each images as image}
+			<img src={image.url} alt={image.alt} />
+		{/each}
+	</div>
+
 	<span class="anchor" id="testimonials" />
 	<h2>Testimonials</h2>
 
@@ -69,6 +152,34 @@
 </footer>
 
 <style lang="scss">
+
+	.slideshow {
+		margin: 1rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		height: 10rem;
+		
+		img {
+			height: calc(100% - 2px); // account for border
+			margin: 0 0.5rem;
+			border: 1px solid black;
+		}
+	}
+
+	.banner {
+		width: 60%;
+		border: 1px solid black;
+		margin: 0 auto;
+		display: flex;
+		
+
+		img {
+			width: 100%;
+		}
+	}
+
 	.anchor {
 		display: block;
 		position: relative;
@@ -187,6 +298,12 @@
 		margin-top: 2rem;
 		text-align: center;
 		font-size: 3rem;
+	}
+
+	h3 {
+		margin-top: 1rem;
+		font-size: 2rem;
+		text-align: center;
 	}
 
 	@media (max-width: 600px) {

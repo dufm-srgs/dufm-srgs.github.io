@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: 'Chase L.',
-		quote: 'The nerdiest course here at nerd camp'
+		quote: 'Now I am become math, the destroyer of brains.'
 	},
 	{
 		author: 'Tristan F.',
