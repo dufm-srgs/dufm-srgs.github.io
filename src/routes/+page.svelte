@@ -128,11 +128,10 @@
 
 	<div class="slideshow-container">
 		<div class="slideshow">
-			{#each images as image}
-				<img src={image.url} alt={image.alt} />
-			{/each}
-			{#each images as image}
-				<img src={image.url} alt={image.alt} />
+			{#each [...images, ...images] as image}
+				<div class="wrapper-image">
+					<img src={image.url} alt={image.alt} />
+				</div>
 			{/each}
 		</div>
 	</div>
@@ -158,14 +157,22 @@
 
 <style lang="scss">
 
+	.wrapper-image {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.slideshow {
 		margin: 1rem;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		height: 10rem;
+		animation: slideshow 5s linear infinite;
 		width: 200%;
-		animation: slideshow 20s linear infinite;
 		
 		img {
 			height: calc(100% - 2px); // account for border
@@ -184,7 +191,7 @@
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(-50% - 0.5rem));
+			transform: translateX(-50%);
 		}
 	}
 
