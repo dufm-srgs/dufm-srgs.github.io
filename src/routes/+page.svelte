@@ -121,6 +121,7 @@
 	<span class="anchor" id="about-us" />
 
 	<h2>About Us</h2>
+	<p class="subtitle">Through hard problems and tireless collaboration, we've grown to create unbreakable bonds with eachother.</p>
 	<div class="banner">
 		<img src={ClassPhoto} alt="Class posing with a whiteboard behind them" />
 	</div>
@@ -165,6 +166,10 @@
 			margin: 0 0.5rem;
 			border: 1px solid black;
 		}
+	}
+
+	p.subtitle {
+		text-align: center;
 	}
 
 	.banner {
