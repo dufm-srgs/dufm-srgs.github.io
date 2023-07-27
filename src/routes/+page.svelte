@@ -137,8 +137,7 @@
 	<div class="testimonial-container">
 		{#each testimonials as testimonial}
 			<div class="testimonial">
-				<span class="quote">‘‘</span>
-				<p>{testimonial.quote}</p>
+				<p>“{testimonial.quote}”</p>
 				<p class="author">- {testimonial.author}</p>
 			</div>
 		{/each}
@@ -209,7 +208,7 @@
 		justify-content: space-evenly;
 
 		div.testimonial {
-			width: 30rem;
+			width: 15rem;
 			margin: 1rem;
 			padding: 1rem;
 			border: 1px solid black;
@@ -220,13 +219,6 @@
 			flex-direction: column;
 			justify-content: center;
 			font-size: 1.2rem;
-
-			.quote {
-				font-weight: 600;
-				font-size: 5rem;
-				padding: 0;
-				height: 4rem;
-			}
 
 			.author {
 				font-style: italic;
