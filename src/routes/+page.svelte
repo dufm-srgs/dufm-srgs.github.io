@@ -126,10 +126,15 @@
 		<img src={ClassPhoto} alt="Class posing with a whiteboard behind them" />
 	</div>
 
-	<div class="slideshow">
-		{#each images as image}
-			<img src={image.url} alt={image.alt} />
-		{/each}
+	<div class="slideshow-container">
+		<div class="slideshow">
+			{#each images as image}
+				<img src={image.url} alt={image.alt} />
+			{/each}
+			{#each images as image}
+				<img src={image.url} alt={image.alt} />
+			{/each}
+		</div>
 	</div>
 
 	<span class="anchor" id="testimonials" />
@@ -158,13 +163,28 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		overflow-x: scroll;
 		height: 10rem;
+		width: 200%;
+		animation: slideshow 20s linear infinite;
 		
 		img {
 			height: calc(100% - 2px); // account for border
 			margin: 0 0.5rem;
 			border: 1px solid black;
+		}
+	}
+
+	.slideshow-container {
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	@keyframes slideshow {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-50% - 0.5rem));
 		}
 	}
 
