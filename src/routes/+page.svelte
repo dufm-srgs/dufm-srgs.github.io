@@ -166,7 +166,12 @@
 	<div class="testimonial-container">
 		{#each testimonials as testimonial}
 			<div class="testimonial">
-				<p>“{testimonial.quote}”</p>
+				<div class="testimonial-body">
+					{#if testimonial.image}
+						<img src={testimonial.image} alt={testimonial.author} />
+					{/if}
+					<p>“{testimonial.quote}”</p>
+				</div>
 				<p class="author">- {testimonial.author}</p>
 				{#if testimonial.title}
 					<p class="title">({testimonial.title})</p>
@@ -268,8 +273,10 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		align-items: stretch;
 
 		div.testimonial {
+			display: block;
 			width: 15rem;
 			margin: 1rem;
 			padding: 1rem;
@@ -277,10 +284,17 @@
 			background-color: #fcf5c7;
 			border-radius: 1rem;
 			text-align: center;
-			display: flex;
 			flex-direction: column;
-			justify-content: center;
 			font-size: 1.2rem;
+
+			.testimonial-body {
+				display: block;
+			}
+
+			img {
+				border-radius: 100%;
+				width: 7rem;
+			}
 
 			.author {
 				font-style: italic;
