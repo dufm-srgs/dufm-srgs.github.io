@@ -99,9 +99,9 @@
 			<h3>Analyze Problems</h3>
 			<p>
 				Explore various topics in mathematics, from theory to automata,
-				in order to think critically and creatively about the world.
-				Whether working alone or in groups, be ready to tackle
-				a wide variety of problems with confidence.
+				in order to hone your critical and creative thinking skills.
+				Together, you will tackle a wide variety of problems
+				with confidence.
 			</p>
 		</div>
 
@@ -109,8 +109,8 @@
 			<h3>Explore and Create</h3>
 
 			<p>
-				Find patterns and make conjectures. Utilize college-level fields of mathematics to analyze
-				new problems and create new solutions.
+				Delve into fields of mathematics you've never even heard of. You'll work together
+				to make connections and find patterns in the mysterious world of mathematics.
 			</p>
 		</div>
 
