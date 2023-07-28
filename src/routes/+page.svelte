@@ -86,7 +86,7 @@
 				Explore mathematics beyond the boundaries of high school in the <b>Dirt Under the Fingernails
 				Mathematics</b> course at the 
 				<a href="https://www.doe.virginia.gov/teaching-learning-assessment/specialized-instruction/governor-s-schools/summer-residential-governor-s-schools">
-					Virginia Summer Residential Governers School.
+					Virginia Summer Residential Governer's School for STEM.
 				</a>
 			</p>
 		</div>
