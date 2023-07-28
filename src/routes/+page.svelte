@@ -15,6 +15,7 @@
 	import PensivePhoto from "$lib/images/slideshow/pensive.webp";
 	import WalkAndChill from "$lib/images/slideshow/walk_and_chill.webp";
 	import GroupDesk from "$lib/images/slideshow/group_desk.webp";
+	import TeachBobblehead from "$lib/images/slideshow/teach_bobblehead.webp";
 
 	interface Image {
 		url: string;
@@ -33,11 +34,11 @@
 		},
 		{
 			url: MadnessPhoto,
-			alt: "A student looking mad while working on a problem"
+			alt: "A student working on a convuluted game tree."
 		},
 		{
 			url: OutsidePhoto,
-			alt: "A student working on a problem outside"
+			alt: "A student throwing a frisbee to their friend in the field"
 		},
 		{
 			url: PensivePhoto,
@@ -45,31 +46,35 @@
 		},
 		{
 			url: BigTree,
-			alt: "A student standing in front of a big tree"
+			alt: "A big combinatorial tree on the whiteboard"
 		},
 		{
 			url: GroupDesk,
-			alt: "A group of students working on a problem at a desk"
+			alt: "A group of students at their desks, arranged in a circle, staring at the camera.."
 		},
 		{
 			url: WalkAndChill,
-			alt: "A student walking and chilling"
+			alt: "Multiple students outside, some walking towards the field and others sitting on benches."
 		},
 		{
 			url: InJoke,
-			alt: "A student laughing at an inside joke"
+			alt: "A student posing in front of a class-joke about singularities"
 		},
 		{
 			url: BigWork,
-			alt: "A student working on a big problem"
+			alt: "Multiple students working together on the collaborative whiteboard"
 		},
 		{
 			url: Grid,
-			alt: "A student working on a problem on a grid"
+			alt: "A student working on a problem of a game grid"
 		},
 		{
 			url: GameGrid,
-			alt: "A student working on a problem on a grid"
+			alt: "A student working on a problem of a game grid"
+		},
+		{
+			url: TeachBobblehead,
+			alt: "Dr. Marc receiving a bobblehead of himself"
 		}
 	];
 
