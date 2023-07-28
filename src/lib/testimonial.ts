@@ -71,5 +71,9 @@ export const testimonials: Testimonial[] = [
 		author: "Violet W.",
 		quote: 'Some of us have taken Calculus BC, some of us have only just finished precalc, but we all suffer together.',
 		image: Violet,
+	},
+	{
+		author: 'James S.',
+		quote: 'This class has shown me new realms of the subject I love.'
 	}
 ];
