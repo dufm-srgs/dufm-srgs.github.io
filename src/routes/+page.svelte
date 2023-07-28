@@ -93,8 +93,8 @@
 		<div class="section">
 			<h3>Analyze Problems</h3>
 			<p>
-				Explore various topics in mathematics in order to think critically and creatively about the
-				world. Whether working alone or in groups, be ready to tackle a wide variety of problems
+				Explore various topics in mathematics in order to hone your critical and creative thinking
+				skills. Whether working alone or in groups, you will tackle a wide variety of problems
 				with confidence.
 			</p>
 		</div>
@@ -103,8 +103,8 @@
 			<h3>Explore and Create</h3>
 
 			<p>
-				Find patterns and make conjectures. Utilize college-level fields of mathematics to analyze
-				new problems and create new solutions.
+				Delve into fields of mathematics you've never even heard of. You'll work together
+				to make connections and find patterns in the mysterious world of mathematics.
 			</p>
 		</div>
 
@@ -121,7 +121,7 @@
 	<span class="anchor" id="about-us" />
 
 	<h2>About Us</h2>
-	<p class="subtitle">Through hard problems and tireless collaboration, we've grown to create unbreakable bonds with eachother.</p>
+	<p class="subtitle">Through hard problems and tireless collaboration, we've grown to create unbreakable bonds with each other.</p>
 	<div class="banner">
 		<img src={ClassPhoto} alt="Class posing with a whiteboard behind them" />
 	</div>
