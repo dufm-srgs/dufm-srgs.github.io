@@ -19,6 +19,7 @@
 	interface Image {
 		url: string;
 		alt: string;
+		width?: number;
 	}
 
 	const images: Image[] = [
@@ -71,6 +72,8 @@
 			alt: "A student working on a problem on a grid"
 		}
 	];
+
+	$: widthSum = images.reduce((acc, image) => acc + (image.width ?? 0), 0);
 </script>
 
 <main>
@@ -138,8 +141,13 @@
 	</div>
 
 	<div class="slideshow-container">
-		<div class="slideshow">
-			{#each [...images, ...images] as image}
+		<div class="slideshow" style="--slide-width: -{widthSum}px">
+			{#each images as image}
+				<div class="wrapper-image" bind:clientWidth={image.width}>
+					<img src={image.url} alt={image.alt} />
+				</div>
+			{/each}
+			{#each images as image}
 				<div class="wrapper-image">
 					<img src={image.url} alt={image.alt} />
 				</div>
@@ -185,7 +193,7 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		height: 10rem;
-		animation: slideshow 20s linear infinite;
+		animation: slideshow 10s linear infinite;
 		width: 200%;
 		
 		img {
@@ -205,7 +213,7 @@
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(-50%);
+			transform: translateX(var(--slide-width, 0));
 		}
 	}
 
