@@ -373,6 +373,10 @@
 	}
 
 	@media (max-width: 600px) {
+		p.subtitle {
+			width: 90%;
+		}
+
 		h1 {
 			font-size: 3rem;
 		}
