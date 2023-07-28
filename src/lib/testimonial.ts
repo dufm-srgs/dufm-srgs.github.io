@@ -8,6 +8,7 @@ import Taran from "./images/testimonials/taran.webp";
 import Lisa from "./images/testimonials/lisa.webp";
 import Daniel from "./images/testimonials/daniel.webp";
 import Tristan from "./images/testimonials/tristan.webp";
+import James from "./images/testimonials/james.webp";
 
 interface Testimonial {
 	author: string;
@@ -74,6 +75,7 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: 'James S.',
-		quote: 'This class has shown me new realms of the subject I love.'
+		quote: 'This class has shown me new realms of the subject I love.',
+		image: James,
 	}
 ];
