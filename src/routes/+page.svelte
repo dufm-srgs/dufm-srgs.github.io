@@ -16,8 +16,6 @@
 	import WalkAndChill from "$lib/images/slideshow/walk_and_chill.webp";
 	import GroupDesk from "$lib/images/slideshow/group_desk.webp";
 
-	import Marc from "$lib/images/marc.jpeg"
-
 	interface Image {
 		url: string;
 		alt: string;
