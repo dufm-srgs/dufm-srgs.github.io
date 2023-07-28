@@ -1,6 +1,7 @@
 interface Testimonial {
 	author: string;
 	quote: string;
+	title?: string;
 }
 
 export const testimonials: Testimonial[] = [
@@ -20,7 +21,8 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: 'Chase L.',
-		quote: 'Now I am become math, the destroyer of brains.'
+		quote: 'Now I am become math, the destroyer of brains.',
+		title: 'Class President',
 	},
 	{
 		author: 'Lisa',
@@ -29,7 +31,8 @@ export const testimonials: Testimonial[] = [
 	{
 		author: 'Tristan F.',
 		quote:
-			'Completing problems in this course has been way more fun than a normal mathematics course.'
+			'Completing problems in this course has been way more fun than a normal mathematics course.',
+		title: 'Webmaster',
 	},
 	{
 		author: "Daniel O.",

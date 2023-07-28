@@ -16,6 +16,8 @@
 	import WalkAndChill from "$lib/images/slideshow/walk_and_chill.webp";
 	import GroupDesk from "$lib/images/slideshow/group_desk.webp";
 
+	import Marc from "$lib/images/marc.jpeg"
+
 	interface Image {
 		url: string;
 		alt: string;
@@ -80,8 +82,11 @@
 			<h1>Real Problems, Real Math</h1>
 
 			<p>
-				Explore mathematics beyond the boundaries of high school in the Dirt Under the Fingernails
-				Mathematics course at the Virginia Summer Residential Governers School.
+				Explore mathematics beyond the boundaries of high school in the <b>Dirt Under the Fingernails
+				Mathematics</b> course at the 
+				<a href="https://www.doe.virginia.gov/teaching-learning-assessment/specialized-instruction/governor-s-schools/summer-residential-governor-s-schools">
+					Virginia Summer Residential Governers School.
+				</a>
 			</p>
 		</div>
 	</div>
@@ -93,9 +98,10 @@
 		<div class="section">
 			<h3>Analyze Problems</h3>
 			<p>
-				Explore various topics in mathematics in order to think critically and creatively about the
-				world. Whether working alone or in groups, be ready to tackle a wide variety of problems
-				with confidence.
+				Explore various topics in mathematics, from theory to automata,
+				in order to think critically and creatively about the world.
+				Whether working alone or in groups, be ready to tackle
+				a wide variety of problems with confidence.
 			</p>
 		</div>
 
@@ -119,9 +125,16 @@
 	</div>
 
 	<span class="anchor" id="about-us" />
-
+	
 	<h2>About Us</h2>
-	<p class="subtitle">Through hard problems and tireless collaboration, we've grown to create unbreakable bonds with eachother.</p>
+
+	<p class="subtitle">
+		Through hard problems and tireless collaboration, we've grown to create unbreakable bonds with each other.
+		Out of every mathematics course our class has taken, each one of us believes that this course has been the
+		most rewarding of all. With <a href="http://faculty.randolphcollege.edu/mordower/">Dr. Marc</a> as our
+		excellent instructor, we've been able to explore mathematics in a way that we've never been able to before.
+	</p>
+
 	<div class="banner">
 		<img src={ClassPhoto} alt="Class posing with a whiteboard behind them" />
 	</div>
@@ -144,6 +157,9 @@
 			<div class="testimonial">
 				<p>“{testimonial.quote}”</p>
 				<p class="author">- {testimonial.author}</p>
+				{#if testimonial.title}
+					<p class="title">({testimonial.title})</p>
+				{/if}
 			</div>
 		{/each}
 	</div>
@@ -197,6 +213,9 @@
 
 	p.subtitle {
 		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		width: 70%;
 	}
 
 	.banner {
@@ -255,6 +274,14 @@
 			.author {
 				font-style: italic;
 				text-align: right;
+				margin-right: 1rem;
+				margin-bottom: 0;
+			}
+
+			.title {
+				font-size: 0.8rem;
+				text-align: right;
+				margin: 0;
 				margin-right: 1rem;
 			}
 		}
