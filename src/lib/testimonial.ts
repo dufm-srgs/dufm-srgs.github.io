@@ -44,10 +44,10 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: "Nico G.",
-		quote: 'I’ve grown my brain but lost my mind'
+		quote: 'I’ve grown my brain but lost my mind.'
 	},
 	{
 		author: "Violet W.",
-		quote: 'We got to see where the cheesecake gets made'
+		quote: 'Some of us have taken calculus bc, some of us have only just finished precalc, but we all suffer together.'
 	}
 ];
