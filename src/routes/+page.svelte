@@ -193,7 +193,7 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		height: 10rem;
-		animation: slideshow 10s linear infinite;
+		animation: slideshow 20s linear infinite;
 		width: 200%;
 		
 		img {
