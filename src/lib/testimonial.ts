@@ -8,12 +8,12 @@ export const testimonials: Testimonial[] = [
 	{
 		author: 'Vishu S.',
 		quote:
-			"This class has been challenging, but in a good way. I've learnt a lot of math and worked with a bunch of really smart people, and I'm very thankful for that"
+			"This class has been challenging, but in a good way. I've learnt a lot of math and worked with a bunch of really smart people, and I'm very thankful for that."
 	},
 	{
 		author: 'Jack C.',
 		quote:
-			'My episodes in this class have made my friends genuinely question my sanity and moral standing'
+			'My episodes in this class have made my friends genuinely question my sanity and moral standing.'
 	},
 	{
 		author: 'Aaron K.',
@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: 'Lisa H.',
-		quote: 'My brain been cooked longer than the potatoes at breakfast bc oh lawd is it BURNT'
+		quote: 'My brain been cooked longer than the potatoes at breakfast bc oh lawd is it BURNT.'
 	},
 	{
 		author: 'Tristan F.',
@@ -36,7 +36,7 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: "Daniel O.",
-		quote: 'In no other class can you learn so much while not knowing any of the material at all'
+		quote: 'In no other class can you learn so much while not knowing any of the material at all.'
 	},
 	{
 		author: "Taran S.",
@@ -48,6 +48,6 @@ export const testimonials: Testimonial[] = [
 	},
 	{
 		author: "Violet W.",
-		quote: 'Some of us have taken calculus bc, some of us have only just finished precalc, but we all suffer together.'
+		quote: 'Some of us have taken Calculus BC, some of us have only just finished precalc, but we all suffer together.'
 	}
 ];

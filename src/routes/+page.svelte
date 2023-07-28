@@ -25,11 +25,11 @@
 	const images: Image[] = [
 		{
 			url: DistraughtPhoto,
-			alt: "A student looking distraught while working on a problem"
+			alt: "A student looking distraught while working on a graph theory problem"
 		},
 		{
 			url: HappyPhoto,
-			alt: "A student smiling while working on a problem"
+			alt: "A student excited that they finished a game tree"
 		},
 		{
 			url: MadnessPhoto,
