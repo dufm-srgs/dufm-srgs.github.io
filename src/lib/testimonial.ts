@@ -8,7 +8,7 @@ import Taran from "./images/testimonials/taran.webp";
 import Lisa from "./images/testimonials/lisa.webp";
 import Daniel from "./images/testimonials/daniel.webp";
 import Tristan from "./images/testimonials/tristan.webp";
-import James from "./images/testimonials/james.webp";
+import James from "./images/testimonials/IMG_20230729_105126.jpg";
 
 interface Testimonial {
 	author: string;
